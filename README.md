@@ -41,7 +41,7 @@ module tff (
             Q <= ~Q;     
         else       
             Q <= Q;  
-   end endmodule
+   endmodule
 ## Testbench Program
 module tb5;   
     reg  clk, rst, D, T;  
@@ -87,7 +87,7 @@ module tb5;
       @(negedge clk); rst = 1;     
       @(negedge clk); rst = 0; D = 1; T = 1;    
       #20 $finish;   
-      end endmodule 
+      endmodule 
 
 
 ## Truth Table
